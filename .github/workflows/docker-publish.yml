@@ -14,7 +14,7 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Log in to Docker Hub
-      run: docker login -u "${{ secrets.DOCKER_USERNAME }}" --password "$DOCKER_PASSWORD"
+      run: docker login -u "${{ secrets.DOCKER_USERNAME }}" --password "${{ secrets.DOCKER_PASSWORD }}"
 
     - name: Build the Docker image
       run: docker build -t ravidevaki/certproject-2:git .
