@@ -17,7 +17,7 @@ jobs:
       run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
     - name: Build the Docker image
-      run: docker build -t ravidevaki/certproject-2:latest .
+      run: docker build -t ravidevaki/certproject-2:git .
 
     - name: Push the Docker image
-      run: docker push ravidevaki/certproject-2:latest
+      run: docker push ravidevaki/certproject-2:git
