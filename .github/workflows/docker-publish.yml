@@ -20,4 +20,4 @@ jobs:
       run: docker build -t ravidevaki@gmail.com/Ravi@edureka123:latest .
 
     - name: Push the Docker image
-      run: docker push ravidevaki@gmail.com/Ravi@edureka123:latest
+      run: docker push ravidevaki/certproject-2:latest
